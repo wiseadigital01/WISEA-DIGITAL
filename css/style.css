@@ -174,12 +174,14 @@ border-radius: 10px;
 }
 
 #services {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 40px auto;
     padding: 30px;
     background-color: #2A2A2A;
     border: 1px solid #D4AF37;
     border-radius: 10px;
+    box-sizing: border-box;
+
 }
 
 #contact {
@@ -206,24 +208,8 @@ border-radius: 10px;
     background-color: #333333;
 }
 
-#services p {
-border: 1px solid #D4AF37;
-padding: 15px;
-border-radius: 8px;
-background-color: #333333;
-line-height: 1.8;
-margin-bottom: 25px;
-}
-#services h3 {
-    color: #C5A059;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-#services p:hover {
-    border-color: #FFFFFF;
-    transform: translateY(-3px);
-    transition: all 0.3s ease;
-}
+
+
 
 #projects p {
     border: 1px solid #D4AF37;
@@ -299,8 +285,20 @@ footer p:hover {
     transition: color 0.3s ease;
 }
 
+footer p:hover {
+    color: #D4AF37;
+    transition: 0.3s;
+}
+
 #welcomeButton {
     transition: all 0.3s ease;
+    background-color: #D4AF37;
+    color: #1C1C1C;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 #welcomeButton:hover {
@@ -309,6 +307,272 @@ footer p:hover {
 #welcomeButton:active {
     transform: scale(0.95);
 }
+
+.project-card {
+    background-color: #2A2A2A;
+    border: 1px solid #D4AF37;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+     transition: transform 0.3s ease;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+
+}
+
+.project-card a {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+
+.project-card:hover {
+    transform: translate(-5px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+
+}
+
+
+.project-card a {
+    display: inline-block;
+    background-color: #D4AF37;
+    color: #1C1C1C;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #1C1C1C;
+    color: #D4AF37;
+}
+
+.project-card h4 {
+    color: #D4AF37;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #F5F5F5;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card p {
+    text-align: center;
+    line-height: 1.6;
+    word-spacing: normal;
+    letter-spacing: normal;
+    text-indent: 0;
+    font-size: 18px;
+}
+
+
+
+
+.project-card a {
+    display: inline-block;
+    background-color: #D4AF37;
+    color: #1C1C1C;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #F5F5F5;
+    transform: translateY(-3px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #D4AF37;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+    transform: scale(1.04);
+}
+
+#projects h2 {
+    text-align: center;
+    color: #D4AF37;
+    margin-bottom: 40px;
+}
+
+#projects h3 {
+    color: #D4AF37;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    margin-bottom: 50px;
+}
+
+.project-card h4 {
+    color: #D4AF37;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #F5F5F5;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#services {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#services h2 {
+    text-align: center;
+    color: #D4AF37;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #2A2A2A;
+    border: 1px solid #D4AF37;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+    color: #D4AF37;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #F5F5F5;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+
+@media (max-width: 900px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+      .services-container {
+    grid-template-columns: repeat(2, 1fr);
+     }  
+ }
+
+
+@media (max-width: 600px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+      .services-container {
+    grid-template-columns: 1fr;
+   }  
+}
+
+#contact {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1C1C1C;
+    color: #F5F5F5;
+}
+
+#contact h2 {
+    color: #D4AF37;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#contact p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    color: #F5F5F5;
+    text-decoration: underline;
+}
+
+#welcomeMessage {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #D4AF37;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid #D4AF37;
+    border-radius: 10px;
+    background-color: #2A2A2A;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #1C1C1C;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #D4AF37;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+
+
 
 
 
